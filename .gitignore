@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.idea/*
+.vscode
+npm-debag.*
+
+
+node_modules/
+finished-app/
+package-lock.json
