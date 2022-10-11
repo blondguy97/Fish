@@ -1,7 +1,25 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs-and-fonts';
 @import 'global';
+
+
+[class*='__container'] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
 
 
 

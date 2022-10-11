@@ -6,7 +6,6 @@ const concat       = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify       = require('gulp-uglify');
 const browserSync  = require('browser-sync').create();
-const imagemin     = require('gulp-imagemin');
 const del          = require('del');
 
 
@@ -35,12 +34,12 @@ function browsersync() {
         notify: false
     });
 }
-
-
  
 function scripts() {
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'development/js/main.js',
     ])
     .pipe(concat('main.min.js'))

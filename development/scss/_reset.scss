@@ -1,11 +1,8 @@
-html {
-	box-sizing: border-box;
-}
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
@@ -45,7 +42,6 @@ ul[class] {
 
 img {
 	max-width: 100%;
-	display: block;
 }
 
 input,
@@ -56,6 +52,8 @@ select {
 	padding: 0;
 }
 
-body {
-	min-height: 100vh;
+body,
+html {
+	height: 100%;
 }
+
